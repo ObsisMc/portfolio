@@ -488,6 +488,38 @@ export const projects = [
     github: "https://github.com/ObsisMc/quiz-app-react",
     webapp: "https://obsismc.github.io/quiz-app-react/",
   },
+  {
+    id: 4,
+    title: "Node feature enhancement in large-scale graphs",
+    date: "Jun 2023",
+    description:
+      "We study node-level tasks of graphs, especially node property prediction in large-scale graphs, trying to improve the prediction accuracy using an innovative clustering method.",
+    image:
+      "https://github.com/ObsisMc/ClusterALL/blob/main/README.assets/ClusterALL%20structure.png?raw=true",
+    tags: [
+      "PyTorch",
+      "PyG",
+      "Graph Neural Networks",
+      "GraphSAGE",
+      "Clustering",
+    ],
+    category: "Machine Learning",
+    github: "https://github.com/ObsisMc/ClusterALL",
+    webapp: "",
+  },
+  {
+    id: 5,
+    title: "Analysis of Java development trend",
+    date: "May 2022",
+    description:
+      "A web app to analyze the development trend of Java from three aspects: 1. Popularity among all languages in recent years 2. Usage of Java 3. Vitality of community. And then gives developers suggestions according to the analysis.",
+    image:
+      "https://github.com/ObsisMc/Analysis-of-Java-development-trend/blob/main/README.assets/showcase1.png?raw=true",
+    tags: ["Java", "JavaScipt", "Vue", "Spring Boot", "ECharts"],
+    category: "Web App",
+    github: "https://github.com/ObsisMc/Analysis-of-Java-development-trend",
+    webapp: "",
+  },
 ];
 
 export const TimeLineData = [
