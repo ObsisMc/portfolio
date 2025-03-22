@@ -1,7 +1,7 @@
 {
   "name": "ruihaozhang-portfolio",
   "version": "0.1.0",
-  "homepage": "https://obsismc.github.io/",
+  "homepage": "https://obsismc.github.io/portofilo",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
