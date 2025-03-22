@@ -179,11 +179,17 @@ const Button = styled.a`
     @media only screen and (max-width: 600px) {
         font-size: 12px;
     }
+    ${({ disabled }) => disabled && `
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  `}
 `;
 
 
 const index = ({ openModal, setOpenModal }) => {
     const project = openModal?.project;
+    const hasLiveApp = project?.webapp ? true : false;
     return (
         <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
             <Container>
@@ -227,7 +233,7 @@ const index = ({ openModal, setOpenModal }) => {
                     )}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        {hasLiveApp && <Button href={project?.webapp} target='new'>View Live App</Button>}
                     </ButtonGroup>
                 </Wrapper>
             </Container>
